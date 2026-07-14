@@ -3,404 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El Pueblo Tikuna — Identidad transfronteriza, bilingüismo y la Pelazón · Universidad Politécnica</title>
-  <meta name="description" content="Monografía del curso de Comunicación: el pueblo Tikuna (Magüta), su identidad transfronteriza en el trapecio amazónico, el bilingüismo tikuna-castellano y la fiesta de la Pelazón como ritual de paso." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20260714" />
-  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="%230E0B09"/><path d="M8 20 Q 12 12 16 16 T 24 12" stroke="%23C5301E" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="24" cy="12" r="2.4" fill="%23C49A5B"/></svg>' />
+  <title>chatPyme — Chatbots que venden y cobran por tu negocio</title>
+  <meta name="description" content="Implementamos chatbots en pequeños negocios para cerrar ventas, cobrar automáticamente y atender a tus clientes 24/7. Solicita una prueba gratuita de impacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260714b" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>" />
 </head>
 <body>
 
-  <!-- ======================= SPLASH ======================= -->
-  <div class="splash" id="splash" aria-hidden="true">
-    <div class="splash-inner">
-      <span class="splash-glyph">Magüta</span>
-      <span class="splash-sub">la gente pescada por Yoí</span>
-      <div class="splash-bar"><span></span></div>
-    </div>
-  </div>
+  <div class="mesh" aria-hidden="true"></div>
 
-  <!-- ======================= NAV ======================= -->
-  <header class="nav" id="nav">
-    <a class="nav-brand" href="#top">
-      <svg class="nav-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 21 Q 11 11 16 16 T 27 11" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="27" cy="11" r="2.6" fill="var(--accent)" stroke="none"/></svg>
-      <span>Tikuna<em>·Magüta</em></span>
-    </a>
-    <nav class="nav-links" aria-label="Secciones">
-      <a href="#pueblo">El pueblo</a>
-      <a href="#frontera">Frontera</a>
-      <a href="#lengua">Lengua</a>
-      <a href="#pelazon">La Pelazón</a>
-      <a href="#retos">Retos</a>
-      <a href="#equipo">Equipo</a>
-    </nav>
-    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  <header class="nav">
+    <a class="nav-brand" href="index.html">chat<em>Pyme</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Inicio</a></li>
+      <li><a href="beneficios.html">Beneficios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm" href="contacto.html">Solicitar prueba</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
   </header>
 
-  <main id="top">
+  <main>
 
-  <!-- ======================= HERO ======================= -->
-  <section class="hero">
-    <div class="hero-mesh" aria-hidden="true"></div>
-    <svg class="hero-river" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <path class="river-line r1" d="M-40 640 C 240 560, 380 720, 640 660 S 1120 560, 1480 640" />
-      <path class="river-line r2" d="M-40 700 C 260 620, 420 780, 700 710 S 1160 630, 1480 700" />
-      <path class="river-line r3" d="M-40 760 C 280 690, 460 830, 740 760 S 1200 700, 1480 760" />
-      <path class="river-line r4" d="M-40 580 C 220 510, 360 650, 620 600 S 1090 500, 1480 580" />
-      <circle class="river-fish" cx="0" cy="0" r="5" />
-    </svg>
-    <div class="hero-grain" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="hero-meta reveal"><span class="dot"></span><span>Universidad Politécnica · Facultad de Ingeniería · Comunicación · Lima, 2026</span></div>
-      <span class="hero-glyph reveal">Magüta</span>
-      <h1 class="hero-title reveal">
-        <span>El pueblo <em>Tikuna</em>.</span>
-        <span>Un solo pueblo, tres países.</span>
-      </h1>
-      <p class="hero-sub reveal">Identidad transfronteriza, bilingüismo y la fiesta de la Pelazón como ritual de paso, en el corazón del trapecio amazónico.</p>
-      <div class="hero-foot reveal">
-        <div class="hero-stats">
-          <div class="hstat"><strong data-count-to="50000">0</strong><span>personas en la triple frontera</span></div>
-          <div class="hstat"><strong data-count-to="3">0</strong><span>países: Perú, Colombia, Brasil</span></div>
-          <div class="hstat"><strong data-count-to="5">0</strong><span>tonos en su lengua</span></div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker">Chatbots para pequeños negocios</p>
+          <h1>Tu negocio atendido <em>24/7</em>, aunque tú estés durmiendo.</h1>
+          <p class="hero-sub">Implementamos asistentes virtuales que responden a tus clientes al instante, <strong>cierran ventas</strong> y <strong>gestionan cobros</strong> — sin contratar más personal.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contacto.html">Quiero una prueba gratuita →</a>
+            <a class="btn btn-ghost" href="beneficios.html">Ver el impacto en cifras</a>
+          </div>
+          <p class="hero-note">Proyecto de investigación aplicada · Universidad Politécnica</p>
         </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#intro">Explorar la monografía</a>
+
+        <div class="chat-demo reveal">
+          <span class="chat-badge">Venta cerrada ✓</span>
+          <div class="chat-head">
+            <div class="chat-avatar">🤖</div>
+            <div>
+              <div class="chat-head-name">Asistente de Pastelería Dulce</div>
+              <div class="chat-head-status"><span class="dot"></span> En línea · responde en segundos</div>
+            </div>
+          </div>
+          <div class="chat-body" data-chat-body></div>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll" aria-hidden="true"><span></span></div>
-  </section>
+    </section>
 
-  <!-- ======================= MARQUEE ======================= -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Worecü</span><i>◆</i><span>Yoí e Ipi</span><i>◆</i><span>Trapecio amazónico</span><i>◆</i><span>Yanchama</span><i>◆</i><span>Cushillococha</span><i>◆</i><span>Lengua tonal</span><i>◆</i><span>Payawarú</span><i>◆</i><span>Loreto</span><i>◆</i><span>Río Amazonas</span><i>◆</i><span>Huito y achiote</span><i>◆</i>
-      <span>Worecü</span><i>◆</i><span>Yoí e Ipi</span><i>◆</i><span>Trapecio amazónico</span><i>◆</i><span>Yanchama</span><i>◆</i><span>Cushillococha</span><i>◆</i><span>Lengua tonal</span><i>◆</i><span>Payawarú</span><i>◆</i><span>Loreto</span><i>◆</i><span>Río Amazonas</span><i>◆</i><span>Huito y achiote</span><i>◆</i>
-    </div>
-  </div>
-
-  <!-- ======================= INTRO ======================= -->
-  <section class="section intro" id="intro">
-    <div class="container">
-      <p class="kicker reveal">Introducción</p>
-      <h2 class="section-title reveal">Una cultura que se comunica<br><em>para seguir existiendo.</em></h2>
-      <div class="intro-grid">
-        <div class="intro-text reveal">
-          <p><span class="dropcap">L</span>a Amazonía peruana alberga una extraordinaria diversidad de pueblos indígenas. Entre ellos destaca el pueblo Tikuna, una de las naciones amazónicas más numerosas de la región fronteriza donde convergen el Perú, Colombia y el Brasil: el trapecio amazónico. Su presencia en tres Estados, su lengua singular y la riqueza de sus rituales lo convierten en un caso privilegiado para comprender cómo una cultura originaria mantiene su identidad en un mundo en constante transformación.</p>
-          <p>Esta monografía, desarrollada en el marco del curso de Comunicación, estudia tres ejes: la identidad transfronteriza, el bilingüismo tikuna-castellano y los rituales de paso, con especial énfasis en la célebre fiesta de la Pelazón. La transmisión de la lengua, la pervivencia de los rituales y el diálogo —muchas veces desigual— con el Estado son, en el fondo, fenómenos comunicativos.</p>
+    <!-- STATS -->
+    <section>
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat reveal"><b><span data-count="24">0</span>/7</b><small>Atención sin descanso, todos los días</small></div>
+          <div class="stat reveal reveal-d1"><b><span data-count="80">0</span>%</b><small>De consultas frecuentes resueltas sin intervención humana*</small></div>
+          <div class="stat reveal reveal-d2"><b>&lt;<span data-count="1">0</span> min</b><small>Tiempo de respuesta al cliente</small></div>
+          <div class="stat reveal reveal-d3"><b>+<span data-count="35">0</span>%</b><small>Más conversión al responder de inmediato*</small></div>
         </div>
-        <aside class="intro-panel reveal" data-tilt>
-          <h3>Pregunta de investigación</h3>
-          <p>¿Cómo se articulan la identidad transfronteriza, el bilingüismo y los rituales de paso —particularmente la fiesta de la Pelazón— en la construcción y preservación de la identidad cultural del pueblo Tikuna en el contexto peruano actual?</p>
-          <h3>Hipótesis</h3>
-          <p>La persistencia de la identidad tikuna depende sobre todo de la vitalidad de sus propios mecanismos comunicativos —la lengua y los rituales de paso— y no únicamente del reconocimiento formal de los tres Estados.</p>
-        </aside>
+        <p style="font-size:.78rem;color:var(--ink-mute);margin-top:.9rem">*Cifras orientativas basadas en estudios del sector de atención automatizada. El impacto real se mide en tu prueba gratuita.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================= CAP I: EL PUEBLO ======================= -->
-  <section class="section pueblo" id="pueblo">
-    <div class="container">
-      <p class="kicker reveal">Capítulo I · Generalidades</p>
-      <h2 class="section-title reveal">Magüta: <em>la gente pescada por Yoí.</em></h2>
-      <p class="section-lead reveal">Ellos se llaman a sí mismos <strong>Magüta</strong>: los pescados con vara. Su mito de origen cuenta que los héroes gemelos Yoí e Ipi ordenaron el cosmos tras pescar a los primeros tikuna de las aguas de la quebrada Eware.</p>
-
-      <figure class="foto foto-wide reveal">
-        <img src="assets/img/pueblo-tikuna.webp" alt="Ilustración de una familia tikuna navegando en canoa por el río Amazonas" loading="lazy" style="object-position: center 72%;" />
-        <figcaption>El río Amazonas, hogar y camino del pueblo Tikuna. Nuestra identidad atraviesa fronteras, pero nuestros lazos permanecen.</figcaption>
-      </figure>
-
-      <div class="cards-grid">
-        <article class="card reveal" data-tilt>
-          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34 Q 16 20 24 28 T 40 22" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="40" cy="22" r="3.4" fill="var(--gold)"/><path d="M10 14 c 3 -4 8 -4 10 0 c -2 4 -7 4 -10 0 Z" fill="var(--cream-3)"/></svg>
-          <h3>El mito de Yoí e Ipi</h3>
-          <p>El mundo fue organizado por dos héroes gemelos que pescaron a los primeros Magüta. La selva no es escenario sino sujeto vivo: cada especie tiene un "dueño" al que el chamán pide permiso. Un principio de reciprocidad con la naturaleza plenamente vigente.</p>
-        </article>
-        <article class="card reveal" data-tilt>
-          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" stroke="var(--cream-3)" stroke-width="1.6" fill="none"/><path d="M24 8 v32 M8 24 h32" stroke="var(--cream-3)" stroke-width="1" opacity=".5"/><circle cx="29" cy="19" r="4" fill="var(--accent)"/></svg>
-          <h3>Ubicación geográfica</h3>
-          <p>Ambas márgenes del río Amazonas y sus afluentes Mayoruna y Yaguas, en Loreto (provincias de Maynas y Mariscal Ramón Castilla). Comunidades como Cushillococha y Bellavista de Callarú concentran su población en el lado peruano.</p>
-        </article>
-        <article class="card reveal" data-tilt>
-          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 34 c 0 -8 4 -12 10 -12 s 10 4 10 12" stroke="var(--gold)" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="24" cy="15" r="5" fill="none" stroke="var(--accent)" stroke-width="2.4"/></svg>
-          <h3>Organización en clanes</h3>
-          <p>Dos grandes mitades: los "seres con plumas" y los "seres sin plumas". El matrimonio une siempre mitades opuestas, garantizando cohesión. Cada comunidad elige un curaca o apu, y federaciones como FECOIBAP, FECOTYBA, ORPIO y AIDESEP los representan ante el Estado.</p>
-        </article>
-        <article class="card reveal" data-tilt>
-          <svg class="card-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38 V22 M20 38 V14 M30 38 V26 M40 38 V10" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/><path d="M6 40 h38" stroke="var(--cream-3)" stroke-width="1.6"/></svg>
-          <h3>Primeros registros</h3>
-          <p>Cronistas como Cristóbal de Acuña y Laureano de la Cruz dejaron testimonio de su existencia entre 1630 y 1640. Entonces eran un pueblo seminómada de cazadores; la época del caucho, a fines del siglo XIX, aceleró su desplazamiento hacia las orillas de los grandes ríos.</p>
-        </article>
-      </div>
-
-      <div class="pop-table reveal">
-        <h3>Población del pueblo Tikuna en la triple frontera</h3>
-        <table>
-          <thead><tr><th>País</th><th>Población aproximada</th></tr></thead>
-          <tbody>
-            <tr><td>Perú (Loreto)</td><td>≈ 9 492 en comunidades · 4 290 hablantes</td></tr>
-            <tr><td>Colombia (Amazonas)</td><td>≈ 7 800 personas</td></tr>
-            <tr><td>Brasil (Alto Solimões)</td><td>≈ 36 000 personas</td></tr>
-            <tr class="total"><td>Total triple frontera</td><td>Más de 50 000 personas</td></tr>
-          </tbody>
-        </table>
-        <p class="table-note">Fuente: elaboración propia a partir de INEI (2018), BDPI y fuentes censales de Colombia y Brasil.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= CAP II: FRONTERA ======================= -->
-  <section class="section frontera" id="frontera">
-    <div class="container">
-      <p class="kicker reveal">Capítulo II · Identidad transfronteriza</p>
-      <h2 class="section-title reveal">La frontera no es un muro:<br><em>es un espacio de circulación.</em></h2>
-      <p class="section-lead reveal">Mucho antes de que existieran los Estados nacionales, las familias tikuna ya navegaban el Amazonas. Las fronteras trazadas en los siglos XIX y XX partieron el territorio de un pueblo que sigue percibiéndose como uno solo. La identidad étnica es más antigua y profunda que la identidad nacional.</p>
-
-      <div class="paises">
-        <article class="pais reveal" data-tilt>
-          <span class="pais-num">01</span>
-          <h3>Perú</h3>
-          <p class="pais-marco">Constitución · Convenio 169 OIT · Ley de Consulta Previa (N.° 29785) · Ley de Lenguas Originarias (N.° 29735)</p>
-          <p>Comunidades nativas tituladas en Loreto. Representación mediante ORPIO, AIDESEP y federaciones locales ante el Ministerio de Cultura.</p>
-        </article>
-        <article class="pais reveal" data-tilt>
-          <span class="pais-num">02</span>
-          <h3>Colombia</h3>
-          <p class="pais-marco">Resguardos indígenas · departamento de Amazonas</p>
-          <p>Los tikuna se organizan mediante resguardos con autonomía territorial reconocida. Leticia es el gran polo urbano de la frontera.</p>
-        </article>
-        <article class="pais reveal" data-tilt>
-          <span class="pais-num">03</span>
-          <h3>Brasil</h3>
-          <p class="pais-marco">Tierras indígenas demarcadas por la FUNAI · Alto Solimões</p>
-          <p>Concentra la mayoría de la población tikuna, con más de 36 000 personas en decenas de aldeas a lo largo del Solimões.</p>
-        </article>
-      </div>
-
-      <figure class="foto foto-map reveal">
-        <img src="assets/img/identidad-transfronteriza.webp" alt="Mapa ilustrado del trapecio amazónico con Leticia, Tabatinga y Santa Rosa de Yavarí" loading="lazy" />
-        <figcaption>El trapecio amazónico: Leticia, Tabatinga y Santa Rosa de Yavarí, un solo territorio cultural repartido en tres países.</figcaption>
-      </figure>
-
-      <blockquote class="pull-quote reveal">
-        <p>«Un tikuna del Perú comparte lengua, mitos, clanes y rituales con un tikuna del Brasil o de Colombia, aunque cada uno tenga documentos de un país distinto.»</p>
-      </blockquote>
-
-      <div class="two-col reveal">
-        <p>Las relaciones de parentesco atraviesan los límites nacionales: es común que una familia tenga miembros en los tres países y que las personas crucen el río para visitar parientes, asistir a fiestas, intercambiar productos o trabajar. Ciudades como Leticia, Tabatinga y Caballococha funcionan como polos donde confluyen las tres poblaciones. La venta de artesanías —tejidos y máscaras de yanchama— recorre el eje Iquitos–Leticia–Tabatinga.</p>
-        <p>Pertenecer a tres países implica tres marcos jurídicos distintos: ventaja para comparar políticas, dificultad para coordinar acciones comunes. Frente a ello, organizaciones como la COICA articulan la defensa de los pueblos amazónicos más allá de las fronteras. Bien gestionada, la identidad transfronteriza no debilita al pueblo: fortalece su autonomía y su voz internacional.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= CAP III: LENGUA ======================= -->
-  <section class="section lengua" id="lengua">
-    <div class="container">
-      <p class="kicker reveal">Capítulo III · Bilingüismo y lengua</p>
-      <h2 class="section-title reveal">Una lengua tonal, única,<br><em>vital pero en peligro.</em></h2>
-
-      <div class="lang-grid">
-        <div class="lang-feature reveal" data-tilt>
-          <span class="lang-big">5</span>
-          <h3>Tonos contrastivos</h3>
-          <p>Rasgo excepcional en la Amazonía, que comparte con lenguas asiáticas como el mandarín. Código ISO 639-3: <code>tca</code>.</p>
+    <!-- FEATURES -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Qué hace por ti</p>
+          <h2>Un empleado digital que <em>nunca se cansa</em>.</h2>
+          <p>Los clientes de hoy esperan respuesta inmediata. Si no la obtienen, compran en otro lado. Tu chatbot evita que eso pase.</p>
         </div>
-        <div class="lang-feature reveal" data-tilt>
-          <span class="lang-big">80%</span>
-          <h3>Transmisión materna</h3>
-          <p>Según el censo de 2017, más del 80 % de la población tikuna mayor de cinco años aprendió primero el tikuna como lengua materna.</p>
-        </div>
-        <div class="lang-feature reveal" data-tilt>
-          <span class="lang-big">33</span>
-          <h3>Escuelas EIB</h3>
-          <p>Escuelas de Educación Intercultural Bilingüe registradas para el pueblo Tikuna hacia 2013, con el apoyo del programa FORMABIAP.</p>
-        </div>
-        <div class="lang-feature reveal" data-tilt>
-          <span class="lang-big">2017</span>
-          <h3>Alfabeto oficial</h3>
-          <p>Normalizado mediante la R.D. N.° 004-2017-MINEDU y la R.M. N.° 730-2017-MINEDU. El tikuna es cooficial en su ámbito territorial (Ley N.° 29735).</p>
-        </div>
-      </div>
-
-      <figure class="foto foto-wide reveal">
-        <img src="assets/img/bilinguismo-educacion.webp" alt="Ilustración de una escuela tikuna: una niña habla mientras un niño escribe, con vocabulario tikuna en la pizarra" loading="lazy" style="object-position: center 62%;" />
-        <figcaption>Hablamos tikuna, español y portugués. La lengua es la raíz de la identidad y se enseña a las nuevas generaciones.</figcaption>
-      </figure>
-
-      <div class="lang-body two-col reveal">
-        <p>Durante mucho tiempo el tikuna fue considerado una lengua aislada. Investigaciones recientes de Fernando Orphão de Carvalho proponen la familia <em>Yurí-Tikuna</em>. Otro rasgo notable: expresa las cualidades mediante verbos. En lugar de decir "mi zapato es negro", un hablante tikuna diría algo equivalente a "mi zapato que negrea".</p>
-        <p>El bilingüismo no es simétrico: el tikuna vive en el ámbito familiar, comunitario y ritual; el castellano domina la escuela, los trámites y los medios. Esa <em>diglosia</em> explica su vulnerabilidad: cuando una lengua queda relegada a lo privado, tiende a debilitarse con las generaciones. Devolverle presencia pública es la clave de su futuro.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= CAP IV: PELAZÓN (horizontal) ======================= -->
-  <section class="section pelazon" id="pelazon">
-    <div class="container pelazon-head">
-      <p class="kicker reveal">Capítulo IV · Ritual de paso</p>
-      <h2 class="section-title reveal">La Pelazón: <em>Worecü.</em></h2>
-      <p class="section-lead reveal">El ritual más emblemático del pueblo Tikuna celebra el paso de la niñez a la condición de mujer adulta. Proviene de las enseñanzas del héroe mítico Yoí y reactualiza los relatos fundadores de la cultura. Desliza para recorrer sus momentos. →</p>
-
-      <div class="foto-duo">
-        <figure class="foto reveal">
-          <img src="assets/img/fiesta-pelazon.webp" alt="Ilustración del ritual de la Pelazón: una mujer mayor atiende el cabello de una joven ante la comunidad" loading="lazy" />
-          <figcaption>El rito de paso: transformación, sabiduría y continuidad de la vida.</figcaption>
-        </figure>
-        <figure class="foto reveal">
-          <img src="assets/img/mascaras-ancestrales.webp" alt="Ilustración de tres máscaras rituales tikuna de yanchama: espíritu ancestral, jaguar y ave" loading="lazy" />
-          <figcaption>Máscaras de yanchama pintadas con achiote y huito: el jaguar, el paujil, los seres del mundo mítico.</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="showcase" id="showcase">
-      <div class="showcase-sticky">
-        <div class="showcase-track" id="showcaseTrack">
-          <article class="stage" data-tilt>
-            <span class="stage-num">I</span>
-            <h3>El significado</h3>
-            <p>Llamada Worecü o Woxrexcüchiga, se celebra con la primera menstruación. Busca asegurar el buen tránsito a la adultez y propiciar el bienestar de la familia, la comunidad y el entorno natural.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">💰</div>
+            <h3>Cierra ventas por ti</h3>
+            <p>Responde dudas de precio, disponibilidad y entrega en el momento exacto en que el cliente quiere comprar. Toma pedidos y los confirma sin que tú toques el teléfono.</p>
+            <span class="card-tag">Ventas automáticas</span>
           </article>
-          <article class="stage" data-tilt>
-            <span class="stage-num">II</span>
-            <h3>La reclusión</h3>
-            <p>La joven es apartada en una caseta de hojas y corteza de palma. Semanas o meses de dieta rigurosa y aprendizaje: las mujeres mayores le transmiten cantos, mitos y oficios. Una escuela de vida.</p>
+          <article class="card reveal reveal-d1">
+            <div class="card-icon">🧾</div>
+            <h3>Cobra sin perseguir a nadie</h3>
+            <p>Envía enlaces de pago, recuerda facturas pendientes con amabilidad y confirma cuando el dinero llegó. Menos cuentas por cobrar, mejor flujo de caja.</p>
+            <span class="card-tag">Gestión de cobros</span>
           </article>
-          <article class="stage" data-tilt>
-            <span class="stage-num">III</span>
-            <h3>La gran fiesta</h3>
-            <p>Tres días de celebración comunitaria. Mingas previas para procesar la yuca y elaborar el payawarú o masato, la bebida fermentada que acompaña cantos antifonales, danzas y tambores día y noche.</p>
-          </article>
-          <article class="stage" data-tilt>
-            <span class="stage-num">IV</span>
-            <h3>Las máscaras</h3>
-            <p>Trajes y grandes máscaras de yanchama —corteza golpeada hasta volverse tela— pintadas con achiote y huito. Representan al jaguar, al paujil, a la garza: los seres del mundo mítico.</p>
-          </article>
-          <article class="stage" data-tilt>
-            <span class="stage-num">V</span>
-            <h3>El corte del cabello</h3>
-            <p>Acto central que da nombre al ritual. El cabello, portador de la condición infantil, se retira para que la joven "nazca" como adulta. Como la oruga que se vuelve mariposa: un cambio doloroso pero luminoso.</p>
-          </article>
-          <article class="stage" data-tilt>
-            <span class="stage-num">VI</span>
-            <h3>Hoy</h3>
-            <p>Las comunidades abolieron el encierro prolongado y el arrancado a carne viva; el corte es simbólico y la fiesta sigue viva en Yahuma Primera Zona y Yahuma Callarú. Tradición que se adapta sin perder su sentido.</p>
+          <article class="card reveal reveal-d2">
+            <div class="card-icon">🌙</div>
+            <h3>Atiende cuando tú no puedes</h3>
+            <p>Noches, fines de semana, feriados. Cada mensaje recibe respuesta al instante y ningún cliente se queda esperando hasta el día siguiente.</p>
+            <span class="card-tag">Disponibilidad 24/7</span>
           </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================= CAP V: RETOS ======================= -->
-  <section class="section retos" id="retos">
-    <div class="container">
-      <p class="kicker reveal">Capítulo V · Problemáticas actuales</p>
-      <h2 class="section-title reveal">Los desafíos<br><em>de la continuidad.</em></h2>
-      <ol class="retos-list">
-        <li class="reveal"><strong>Pérdida de la lengua.</strong> La presión del castellano, la migración urbana y el cambio de prestigio amenazan la transmisión. Con una lengua se pierden también mitos, conocimientos y una manera única de entender la realidad.</li>
-        <li class="reveal"><strong>EIB incompleta.</strong> Faltan docentes bilingües capacitados y materiales en tikuna. La escuela debe dejar de ser factor de pérdida cultural para convertirse en aliada de la identidad.</li>
-        <li class="reveal"><strong>Deforestación y territorio.</strong> Tala ilegal, minería y narcotráfico presionan el bosque que sostiene la pesca, la caza y la agricultura. Muchas comunidades carecen aún de titulación completa.</li>
-        <li class="reveal"><strong>Megaproyectos y consulta previa.</strong> El Parque Nacional Yaguas y la Hidrovía Amazónica impactan la vida comunitaria. La consulta previa (Convenio 169 OIT, Ley N.° 29785) se aplica a menudo de forma apresurada o meramente formal.</li>
-        <li class="reveal"><strong>Comunicación intercultural.</strong> El desafío de fondo: construir un diálogo justo entre el pueblo, el Estado y la sociedad, que reconozca al Tikuna como interlocutor con conocimientos, derechos y voz propia.</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ======================= CONCLUSIONES ======================= -->
-  <section class="section conclusiones" id="conclusiones">
-    <div class="container">
-      <p class="kicker reveal">Conclusiones</p>
-      <h2 class="section-title reveal">Lo que confirma<br><em>esta investigación.</em></h2>
-
-      <figure class="foto foto-wide reveal">
-        <img src="assets/img/armonia-naturaleza.webp" alt="Ilustración de un joven tikuna remando en canoa al atardecer sobre el río Amazonas" loading="lazy" style="object-position: center 55%;" />
-        <figcaption>«Somos parte de la naturaleza y la naturaleza es parte de nosotros.»</figcaption>
-      </figure>
-
-      <div class="conc-grid">
-        <div class="conc reveal" data-tilt><span>01</span><p>El pueblo Tikuna o Magüta es una de las naciones indígenas más numerosas de la Amazonía, con sólida organización clánica y un mito de origen que estructura toda su cultura.</p></div>
-        <div class="conc reveal" data-tilt><span>02</span><p>La identidad transfronteriza es su rasgo definitorio: tres Estados, un solo pueblo unido por lengua, mitos, parentesco y rituales, con creciente capacidad organizativa.</p></div>
-        <div class="conc reveal" data-tilt><span>03</span><p>La lengua tikuna, tonal y singular, conserva vitalidad gracias a la transmisión familiar, pero peligra en varias comunidades. La EIB es clave y aún insuficiente.</p></div>
-        <div class="conc reveal" data-tilt><span>04</span><p>La Pelazón marca el tránsito a la adultez mediante reclusión, aprendizaje y fiesta. Se ha transformado, pero conserva su profundo sentido cosmológico.</p></div>
-        <div class="conc reveal" data-tilt><span>05</span><p>Las problemáticas actuales —lengua, educación, territorio, consulta previa— remiten a la necesidad de una comunicación intercultural más justa.</p></div>
-        <div class="conc reveal" data-tilt><span>06</span><p>Se confirma la hipótesis: la continuidad tikuna depende ante todo de sus propios mecanismos comunicativos —la lengua y los rituales— más que del reconocimiento formal de los Estados.</p></div>
+    <!-- STEPS -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Cómo trabajamos</p>
+          <h2>De cero a chatbot en <em>tres pasos</em>.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <h3>Analizamos tu negocio</h3>
+            <p>Estudiamos qué preguntan tus clientes, cómo vendes y dónde pierdes oportunidades hoy.</p>
+          </div>
+          <div class="step reveal reveal-d1">
+            <h3>Configuramos tu asistente</h3>
+            <p>Creamos un chatbot con tu tono, tus productos y tus procesos de venta y cobro.</p>
+          </div>
+          <div class="step reveal reveal-d2">
+            <h3>Medimos el impacto</h3>
+            <p>Hacemos una prueba real en tu negocio y te mostramos con datos cuánto mejora tu operación.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================= EQUIPO ======================= -->
-  <section class="section equipo" id="equipo">
-    <div class="container">
-      <p class="kicker reveal">El equipo</p>
-      <h2 class="section-title reveal">Integrantes<br><em>del trabajo grupal.</em></h2>
-      <div class="team-grid" data-team></div>
-      <p class="team-meta reveal">Curso de <strong>Comunicación</strong> · Facultad de Ingeniería · Universidad Politécnica · Lima — Perú, 2026</p>
-    </div>
-  </section>
-
-  <!-- ======================= GITHUB CTA ======================= -->
-  <section class="section repo-cta">
-    <div class="container">
-      <div class="repo-card reveal" data-tilt>
-        <svg viewBox="0 0 16 16" width="42" height="42" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-        <h2>Proyecto abierto en GitHub</h2>
-        <p>Esta página y los documentos del trabajo viven en el repositorio <code>aaroncn10/universidad-politecnica</code>. Consulta la monografía completa, el historial de cambios y las próximas entregas del curso.</p>
-        <a class="btn btn-primary" href="https://github.com/aaroncn10/universidad-politecnica" target="_blank" rel="noopener">Abrir repositorio ↗</a>
+    <!-- QUOTE -->
+    <section>
+      <div class="wrap">
+        <div class="quote reveal">
+          <blockquote>"El 62% de los consumidores espera respuesta en menos de 10 minutos. Un pequeño negocio no puede pagar un equipo 24 horas — pero sí puede tener un chatbot."</blockquote>
+          <cite>— Equipo chatPyme · Investigación aplicada sobre automatización en pymes</cite>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================= REFERENCIAS ======================= -->
-  <section class="section refs" id="refs">
-    <div class="container">
-      <p class="kicker reveal">Referencias bibliográficas</p>
-      <ul class="refs-list reveal">
-        <li>Camacho Nassar, H. (1995). <em>Magüta: la gente pescada por Yoí</em>. Tercer Mundo Editores.</li>
-        <li>Carvalho, F. O. de (2009). On the genetic kinship of the languages Tikuna and Yurí. <em>Revista Brasileira de Linguística Antropológica</em>, 1(2), 247-268.</li>
-        <li>Centro Amazónico de Antropología y Aplicación Práctica [CAAAP]. (s.f.). <em>Publicaciones sobre pueblos indígenas de la Amazonía peruana</em>. caaap.org.pe</li>
-        <li>Goulard, J.-P. (1994). Le rite de la pélazon chez les Ticuna. <em>Journal de la Société des Américanistes</em>, 80, 51-77.</li>
-        <li>Goulard, J.-P. (2009). <em>Entre mortales e inmortales. El ser según los ticuna de la Amazonía</em>. CAAAP / IFEA.</li>
-        <li>Instituto de Investigaciones de la Amazonía Peruana [IIAP]. (s.f.). <em>Pueblos indígenas y diversidad cultural de la Amazonía peruana</em>. iiap.gob.pe</li>
-        <li>Instituto Nacional de Estadística e Informática [INEI]. (2018). <em>III Censo de Comunidades Nativas 2017. Resultados definitivos</em>.</li>
-        <li>Ministerio de Cultura del Perú. (s.f.). <em>Pueblo Ticuna. Base de Datos Oficial de Pueblos Indígenas u Originarios (BDPI)</em>. bdpi.cultura.gob.pe/pueblos/ticuna</li>
-        <li>Ministerio de Cultura del Perú. (2016). <em>Woxrexcüchiga. El ritual de la pubertad en el pueblo Ticuna</em>. Dirección de Patrimonio Inmaterial.</li>
-        <li>Ministerio de Educación del Perú. (2013). <em>Documento Nacional de Lenguas Originarias del Perú</em>.</li>
-        <li>Ministerio de Educación del Perú. (2018). <em>Lenguas originarias del Perú</em>.</li>
-        <li>Montes Rodríguez, M. E. (2004). <em>Fonología de la lengua ticuna</em>. Universidad de los Andes – Instituto Caro y Cuervo.</li>
-        <li>Ramos Valenzuela, H. A. (2010). <em>El ritual tikuna de la pelazón en la comunidad de Arara, sur del trapecio amazónico</em> [Tesis, Universidad Nacional de Colombia].</li>
-        <li>Riaño Umbarila, E. (2003). <em>Organizando su espacio, construyendo su territorio</em>. Universidad Nacional de Colombia.</li>
-      </ul>
-    </div>
-  </section>
+    <!-- CTA -->
+    <section>
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>Descubre cuánto podría crecer tu negocio.</h2>
+          <p>Déjanos tus datos y hacemos una prueba gratuita de impacto: simulamos el chatbot con casos reales de tu negocio y te mostramos los resultados.</p>
+          <a class="btn btn-primary" href="contacto.html">Solicitar mi prueba gratuita →</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <!-- ======================= FOOTER ======================= -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="footer-glyph">Magüta</span>
-        <p>Monografía del curso de Comunicación · Universidad Politécnica · 2026.<br>Dedicada a los pueblos originarios de la Amazonía peruana, guardianes de una lengua, una memoria y una forma de habitar el mundo.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#pueblo">El pueblo</a>
-        <a href="#frontera">Frontera</a>
-        <a href="#lengua">Lengua</a>
-        <a href="#pelazon">La Pelazón</a>
-        <a href="#refs">Referencias</a>
-        <a href="https://github.com/aaroncn10/universidad-politecnica" target="_blank" rel="noopener">GitHub ↗</a>
-      </div>
-    </div>
-    <div class="container footer-base">
-      <span>© 2026 · Aaron Collado, Milagros Vasquez, Fray Flores, Alan Espinoza, Jaime Callañaupa</span>
-      <a href="https://github.com/aaroncn10/universidad-politecnica" target="_blank" rel="noopener">aaroncn10/universidad-politecnica</a>
+  <footer>
+    <div class="wrap foot">
+      <span>© 2026 chatPyme · Proyecto Universidad Politécnica</span>
+      <nav class="foot-links">
+        <a href="index.html">Inicio</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
   </footer>
 
-  <script defer src="lib/manifest.js?v=20260714"></script>
-  <script defer src="main.js?v=20260714"></script>
+  <script defer src="main.js?v=20260714b"></script>
 </body>
 </html>
