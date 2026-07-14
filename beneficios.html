@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beneficios — chatPyme · El impacto de un chatbot en tu negocio</title>
+  <meta name="description" content="Gráficos e indicadores del impacto de implementar un chatbot en un pequeño negocio: más ventas cerradas, cobros recuperados y atención inmediata." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260714b" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>" />
+</head>
+<body>
+
+  <div class="mesh" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav-brand" href="index.html">chat<em>Pyme</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="beneficios.html" aria-current="page">Beneficios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm" href="contacto.html">Solicitar prueba</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">El impacto, en cifras</p>
+        <h1>Lo que cambia cuando tu negocio <em>responde al instante</em>.</h1>
+        <p>Estos escenarios ilustran el impacto típico de automatizar la atención en un pequeño negocio. En tu prueba gratuita medimos los números reales del tuyo. Pasa el cursor sobre los gráficos para ver el detalle.</p>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section>
+      <div class="wrap">
+        <div class="chart-grid">
+
+          <!-- Bar chart: ventas -->
+          <article class="chart-card" data-reveal>
+            <h3>📈 Ventas cerradas por mes</h3>
+            <p>Escenario ilustrativo: negocio que recibe ~200 consultas mensuales.</p>
+            <div class="bars">
+              <div class="bar-group">
+                <div class="bar b-before" style="height:38%"><span class="tip">Sin bot: 19 ventas</span></div>
+                <div class="bar b-after" style="height:56%"><span class="tip">Con bot: 28 ventas</span></div>
+                <span class="bar-label">Mes 1</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar b-before" style="height:42%"><span class="tip">Sin bot: 21 ventas</span></div>
+                <div class="bar b-after" style="height:68%"><span class="tip">Con bot: 34 ventas</span></div>
+                <span class="bar-label">Mes 2</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar b-before" style="height:40%"><span class="tip">Sin bot: 20 ventas</span></div>
+                <div class="bar b-after" style="height:78%"><span class="tip">Con bot: 39 ventas</span></div>
+                <span class="bar-label">Mes 3</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar b-before" style="height:44%"><span class="tip">Sin bot: 22 ventas</span></div>
+                <div class="bar b-after" style="height:88%"><span class="tip">Con bot: 44 ventas</span></div>
+                <span class="bar-label">Mes 4</span>
+              </div>
+            </div>
+            <div class="bars-labels"></div>
+            <div class="chart-legend">
+              <span><i style="background:#b6bdcb"></i>Sin chatbot</span>
+              <span><i style="background:var(--accent)"></i>Con chatbot</span>
+            </div>
+          </article>
+
+          <!-- Donut: consultas resueltas -->
+          <article class="chart-card" data-reveal>
+            <h3>🤖 Consultas resueltas automáticamente</h3>
+            <p>La mayoría de las preguntas de tus clientes se repiten — y el bot las domina.</p>
+            <div class="donut-wrap">
+              <svg class="donut" viewBox="0 0 160 160" data-donut="80" role="img" aria-label="80% de consultas resueltas automáticamente">
+                <defs>
+                  <linearGradient id="donutGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#6366f1"/>
+                    <stop offset="100%" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                </defs>
+                <circle class="track" cx="80" cy="80" r="62"></circle>
+                <circle class="value" cx="80" cy="80" r="62"></circle>
+                <text class="donut-num" x="80" y="90" text-anchor="middle">80%</text>
+              </svg>
+              <ul class="donut-list">
+                <li><span>Precios y disponibilidad</span><b>34%</b></li>
+                <li><span>Horarios y ubicación</span><b>22%</b></li>
+                <li><span>Estado de pedidos</span><b>15%</b></li>
+                <li><span>Pagos y facturación</span><b>9%</b></li>
+                <li><span>Casos que pasan a un humano</span><b>20%</b></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Line chart: tiempo de respuesta -->
+          <article class="chart-card" data-reveal>
+            <h3>⏱️ Tiempo de respuesta al cliente</h3>
+            <p>De horas de espera a segundos, desde el primer día.</p>
+            <svg class="linechart" viewBox="0 0 520 260" role="img" aria-label="Comparación de tiempo de respuesta con y sin chatbot">
+              <line class="grid-line" x1="50" y1="30"  x2="500" y2="30"></line>
+              <line class="grid-line" x1="50" y1="80"  x2="500" y2="80"></line>
+              <line class="grid-line" x1="50" y1="130" x2="500" y2="130"></line>
+              <line class="grid-line" x1="50" y1="180" x2="500" y2="180"></line>
+              <line class="grid-line" x1="50" y1="230" x2="500" y2="230"></line>
+              <text class="axis-label" x="10" y="34">4 h</text>
+              <text class="axis-label" x="10" y="84">3 h</text>
+              <text class="axis-label" x="10" y="134">2 h</text>
+              <text class="axis-label" x="10" y="184">1 h</text>
+              <text class="axis-label" x="10" y="234">0</text>
+              <text class="axis-label" x="60"  y="252">Lun</text>
+              <text class="axis-label" x="135" y="252">Mar</text>
+              <text class="axis-label" x="210" y="252">Mié</text>
+              <text class="axis-label" x="285" y="252">Jue</text>
+              <text class="axis-label" x="360" y="252">Vie</text>
+              <text class="axis-label" x="435" y="252">Sáb</text>
+              <path class="line-path line-a" d="M 65 60 L 140 95 L 215 45 L 290 110 L 365 70 L 440 38"></path>
+              <path class="line-path line-b" d="M 65 226 L 140 227 L 215 226 L 290 227 L 365 226 L 440 227"></path>
+              <circle class="dot-pt" cx="65"  cy="226" r="5"><title>Lunes: respuesta en segundos</title></circle>
+              <circle class="dot-pt" cx="140" cy="227" r="5"><title>Martes: respuesta en segundos</title></circle>
+              <circle class="dot-pt" cx="215" cy="226" r="5"><title>Miércoles: respuesta en segundos</title></circle>
+              <circle class="dot-pt" cx="290" cy="227" r="5"><title>Jueves: respuesta en segundos</title></circle>
+              <circle class="dot-pt" cx="365" cy="226" r="5"><title>Viernes: respuesta en segundos</title></circle>
+              <circle class="dot-pt" cx="440" cy="227" r="5"><title>Sábado: respuesta en segundos</title></circle>
+            </svg>
+            <div class="chart-legend">
+              <span><i style="background:#b6bdcb"></i>Atención manual (horas)</span>
+              <span><i style="background:var(--accent-2)"></i>Con chatbot (segundos)</span>
+            </div>
+          </article>
+
+          <!-- Progress: cobros -->
+          <article class="chart-card" data-reveal>
+            <h3>💳 Cobros y recordatorios de pago</h3>
+            <p>El bot recuerda, envía el enlace y confirma el pago. Tú solo ves llegar el dinero.</p>
+            <div class="prog-rows">
+              <div class="prog-row">
+                <div class="prog-head"><span>Facturas cobradas a tiempo (con bot)</span><b>87%</b></div>
+                <div class="prog-track"><div class="prog-fill" data-fill="87"></div></div>
+              </div>
+              <div class="prog-row">
+                <div class="prog-head"><span>Facturas cobradas a tiempo (sin bot)</span><b>54%</b></div>
+                <div class="prog-track"><div class="prog-fill warm" data-fill="54"></div></div>
+              </div>
+              <div class="prog-row">
+                <div class="prog-head"><span>Recordatorios enviados automáticamente</span><b>100%</b></div>
+                <div class="prog-track"><div class="prog-fill cool" data-fill="100"></div></div>
+              </div>
+              <div class="prog-row">
+                <div class="prog-head"><span>Tiempo de tu equipo dedicado a cobrar</span><b>−70%</b></div>
+                <div class="prog-track"><div class="prog-fill" data-fill="30"></div></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p style="font-size:.78rem;color:var(--ink-mute);margin-top:1.1rem">Los gráficos muestran escenarios ilustrativos construidos a partir de estudios del sector y casos de referencia. Los resultados varían según cada negocio: por eso ofrecemos una prueba gratuita para medir el impacto real en el tuyo.</p>
+      </div>
+    </section>
+
+    <!-- Beneficios extra -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Más allá de los números</p>
+          <h2>Beneficios que se sienten <em>desde la primera semana</em>.</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">🛒</div>
+            <h3>Cero ventas perdidas de madrugada</h3>
+            <p>El 40% de los mensajes a negocios llegan fuera del horario laboral. Cada uno recibe respuesta y seguimiento.</p>
+          </article>
+          <article class="card reveal reveal-d1">
+            <div class="card-icon">😌</div>
+            <h3>Tu tiempo, de vuelta</h3>
+            <p>Deja de responder las mismas 10 preguntas todos los días. Dedica tus horas a lo que hace crecer el negocio.</p>
+          </article>
+          <article class="card reveal reveal-d2">
+            <div class="card-icon">📊</div>
+            <h3>Datos de tus clientes</h3>
+            <p>Cada conversación te dice qué buscan, qué preguntan y por qué no compran. Información que antes se perdía.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>¿Quieres ver estos números con los datos de <em>tu</em> negocio?</h2>
+          <p>Hacemos una prueba gratuita: configuramos un chatbot piloto con tus casos reales y medimos juntos el impacto antes de que decidas nada.</p>
+          <a class="btn btn-primary" href="contacto.html">Solicitar mi prueba gratuita →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© 2026 chatPyme · Proyecto Universidad Politécnica</span>
+      <nav class="foot-links">
+        <a href="index.html">Inicio</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script defer src="main.js?v=20260714b"></script>
+</body>
+</html>
